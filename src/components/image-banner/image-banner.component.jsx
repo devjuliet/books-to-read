@@ -1,7 +1,9 @@
 import React from 'react';
+import booksImg from '../../assets/books.jpg'
+import './image-banner.styles.scss'
 
-const ImageBanner = () => (
-  <img src="https://live.staticflickr.com/1950/30213988667_b6eebb9045_k.jpg" class="img-fluid" alt="Responsive image"/>
-);
-
+function ImageBanner() {
+  // Import result is the URL of your image
+  return <img src={booksImg} className="img" />;
+}
 export default ImageBanner;

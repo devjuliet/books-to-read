@@ -4,13 +4,15 @@ import './App.css';
 import Header from './components/header/header.component';
 import Directory from './components/directory/directory.component';
 import Banner from './components/banner/banner.component';
+import Footer from './components/footer/footer.component';
 
 function App() {
   return (
-    <div>
+    <div className="bg-light">
       <Header/>
       <Directory/>
       <Banner/>
+      <Footer/>
     </div>
   );
 }
