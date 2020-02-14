@@ -2,17 +2,16 @@ import React from 'react';
 import {Switch, Route} from 'react-router-dom';
 import './App.css';
 import Header from './components/header/header.component';
-import Directory from './components/directory/directory.component';
-import Banner from './components/banner/banner.component';
 import Footer from './components/footer/footer.component';
+import HomePage from './pages/homepage/homepage.component';
 
 function App() {
   return (
     <div className="bg-light">
       <Header/>
-
-      <Directory/>
-      <Banner/>
+      <Switch>
+        <Route exact path='/' component={HomePage}/>
+      </Switch>
       <Footer/>
     </div>
   );
