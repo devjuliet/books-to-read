@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+import {Switch, Route} from 'react-router-dom';
 import './App.css';
 import Header from './components/header/header.component';
 import Directory from './components/directory/directory.component';
@@ -10,6 +10,7 @@ function App() {
   return (
     <div className="bg-light">
       <Header/>
+
       <Directory/>
       <Banner/>
       <Footer/>
