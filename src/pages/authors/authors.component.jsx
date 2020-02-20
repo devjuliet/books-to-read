@@ -1,4 +1,5 @@
 import React from 'react';
+import Directory from '../../components/directory/directory.component';
 import AUTHORS_DATA from './authors.data.js';
 
 class AuthorsPage extends React.Component{
@@ -12,7 +13,7 @@ class AuthorsPage extends React.Component{
   render(){
     return(
       <div className="">
-        AUTHORS PAGE
+        <Directory/>
       </div>
     );
   }
